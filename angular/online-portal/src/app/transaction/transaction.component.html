@@ -1,0 +1,33 @@
+<div style="background-color:cadetblue;padding-bottom: 100px; padding:20px;">
+<div class="row">
+    <div class="col-9">
+        <h2>Balance and Transactions</h2>
+    </div>
+    <div class="col-3">
+      <a routerLink = "../../success/{{userId}}" class="btn btn-primary">All accounts</a>
+  </div>
+  
+  </div>
+<div class="container" style="margin-top: 50px;margin-bottom: 50px;margin-left: 200px;background-color: lightblue;height: 200px;">
+    <h1 style="text-align: center;align-self: center;padding:60px;">Total Balance : {{total}}</h1>
+</div>
+<div class="container">
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Transaction Id</th>
+        <th>Transaction Description</th>
+        <th>Amount</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let tr of transaction">
+        <td><span>{{tr.transid}}</span></td>
+        <td><span>{{tr.trans_desc}}</span></td>
+        <td><span>{{tr.amount}}</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>

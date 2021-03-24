@@ -1,0 +1,25 @@
+<div class="container-fluid" >
+    
+    <div class="row" style="padding:20px;">
+    <div class="col-7">
+        <h2>Interest on Policies per Year</h2>
+    </div>
+    <div class="col-2">
+      <a routerLink = "success/{{userId}}" class="btn btn-primary">Balance and Transactions</a>
+  </div>
+  <div  class="col-1"></div>
+  <a routerLink = "" class="btn btn-primary">Sign Out</a></div>
+  </div>
+  <hr>
+<div>
+    <div style="display:block">
+    <canvas height="80px" baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [legend]="barChartLegend"
+    [colors]="barChartColors"
+    [chartType]="barChartType"></canvas>
+    </div>
+
+</div>

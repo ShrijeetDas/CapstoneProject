@@ -1,0 +1,50 @@
+<div style="background-color:cadetblue;padding-bottom: 100px;">
+<h3 style="padding:20px;"><u>Your UserId is {{userId}}</u></h3>
+<div class="container-fluid" >
+    
+    <div class="row" style="padding:20px;">
+    <div class="col-7">
+        <h2>All accounts</h2>
+    </div>
+    <div class="col-2">
+      <a routerLink = "../../transactions/{{userId}}" class="btn btn-primary">Balance and Transactions</a>
+  </div>
+  <div  class="col-1"></div>
+  <a routerLink = "../../" class="btn btn-primary">Sign Out</a></div>
+  </div>
+  <hr>
+<div class="container">
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Account Id</th>
+        <th>Plan Name</th>
+        <th>Plan Description</th>
+        <th>IRS Code</th>
+        <th>Balance</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let acc of account">
+        <td><span>{{acc.acid}}</span></td>
+        <td><span>{{acc.plan_name}}</span></td>
+        <td><span>{{acc.plan_desc}}</span></td>
+        <td><span>{{acc.plan_irscode}}</span></td>
+        <td><span>{{acc.acc_bal}}</span></td>
+      </tr>
+      </tbody>
+    </table>
+    <div>
+        <div style="display:block">
+        <canvas baseChart 
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"></canvas>
+        </div>
+    
+    </div>
+  </div>
+  </div>
