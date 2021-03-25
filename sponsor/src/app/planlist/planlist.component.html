@@ -1,0 +1,35 @@
+<!-- <app-breadcrumbs></app-breadcrumbs> -->
+<div class="container">
+    <div style="float:right;">
+        <a  routerLinkActive="active"
+        routerLink= "../../" title="logout" class="nav-link">LogOut</a>
+        </div>
+    <!-- <div class="sub-entry"> -->
+   <h2 title="balance details of sponser">LIST OF PLAN</h2>
+    <table class="table table-bordered">
+    <thead>
+        <tr class="head">
+            <th>ID</th>
+            <th>Plan Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let acc of account">
+            <td class="one">{{acc.id}}</td>
+            <td class="tip"><span>{{acc.plan_desc}}</span>{{acc.plan_name}}</td>
+        </tr>
+    </tbody>
+    </table>
+<!-- </div> -->
+
+<!-- <div class="sub-entry"> -->
+<!-- <ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+    <e-accumulation-series-collection>
+        <e-accumulation-series [dataSource]='account' xName='moneySource' yName='currentValue'
+        [pointColorMapping]= 'map' [dataLabel]='datalabel'></e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
+</div> -->
+</div>
+
+<!-- <marquee>Due to maintenance the application will not available from 03/25/2021 10 PM to 03/26/2021 6AM </marquee> -->

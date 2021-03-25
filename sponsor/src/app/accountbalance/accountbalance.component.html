@@ -1,0 +1,58 @@
+
+
+
+
+
+
+     
+        
+    
+
+    <div class="container">
+        <div style="float:right;">
+        <a  routerLinkActive="active"
+        routerLink= "../../" title="logout" class="nav-link">LogOut</a>
+        </div>
+      <div class="sub-entry">
+     <h2 title="balance details of sponser">BALANCE DETAILS</h2>
+      <table id="table2" class="table table-bordered">
+      <thead>
+          <tr class="head">
+              <th>ID</th>
+              <th>Money Source</th>
+              <th>Current Value</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let acc of account">
+              <td class="one">{{acc.id}}</td>
+              <td class="two">{{acc.moneySource}}</td>
+              <td class="three">${{acc.currentValue}}</td>
+              <td>
+                  <!-- <button  (click)="accountDetails(acc.id)" class="btn btn-info">View</button>&nbsp;&nbsp; -->
+                  <button  (click)="next(acc.id)" class="btn btn-info">Move to planlist</button>
+              </td>
+              
+          </tr>
+      </tbody>
+      </table>
+  </div>
+  
+  <!-- <div class="sub-entry"> -->
+  <!-- <ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+      <e-accumulation-series-collection>
+          <e-accumulation-series [dataSource]='account' xName='moneySource' yName='currentValue'
+          [pointColorMapping]= 'map' [dataLabel]='datalabel'></e-accumulation-series>
+      </e-accumulation-series-collection>
+  </ejs-accumulationchart>
+  </div> -->
+
+  <ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+    <e-accumulation-series-collection>
+        <e-accumulation-series [dataSource]='account' xName='moneySource' yName='currentValue'
+        [pointColorMapping]= 'map' [dataLabel]='datalabel'></e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
+  </div>
+  

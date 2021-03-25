@@ -1,0 +1,29 @@
+.nav-item{
+    color: white;
+}
+
+a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.nav-navbar{
+    top: 0;
+}
+#logo{
+    color:goldenrod;
+    font-weight: bold;
+    font-size: 30px;
+}
+span{
+    padding-top: 10px;
+    text-align: center;
+}
+a:hover{
+    color:goldenrod;
+}
+i{
+    padding-left: 10px;
+}

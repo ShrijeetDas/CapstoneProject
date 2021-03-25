@@ -1,0 +1,53 @@
+<!-- <div>
+    <h2>LOGIN HERE</h2><hr>
+    <form #loginForm="ngForm" (ngSubmit)="handleFormValues(loginForm.value)" style="margin-left: 500px; margin-right: 500px; padding: 50px;">
+        <h1 style="padding-bottom: 30px;">Login</h1>
+        <label>
+            Enter UserId : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="userId" [(ngModel)]="userId"
+            #ui ="ngModel" required autocomplete="off">
+            <span style="color:red" [hidden]="ui.valid || ui.pristine">UserId is mandotory</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            Enter Password : <input type="password" name="password" [(ngModel)]="password"
+            #pw ="ngModel" required>
+        </label>
+        <span style="color:red" [hidden]="pw.valid || pw.pristine">Password is mandotory</span>
+        <br>
+        <input type="submit" value="Submit" [disabled] = "loginForm.invalid" style=" margin-top: 20px;">
+    </form>
+</div> -->
+
+
+<div class="container">
+    <div id="login-box">
+        <h2>LOGIN HERE</h2>
+        <div class="input-icons" style="color : red"></div>
+        <form #loginForm="ngForm"  (submit)="handleFormValues(loginForm.value)">
+            <div class="input-icons">
+                    <label>User Name<br>
+                        <i class="fa fa-user"></i>
+                        <input type="number" name="userId" [(ngModel)]="userId"  class="input-field" style="width: 500px;"
+                        #ui ="ngModel" required autocomplete="off">
+                    </label><br>
+                    </div>
+                    <div class="input-icons">
+                
+                    <label>Password<br>
+                        <i class="fa fa-key"></i>
+                        <input type="password" name="password" [(ngModel)]="password"  class="input-field" style="width: 500px;"
+            #pw ="ngModel" required>
+                    </label><br>
+                    </div>
+                    <div class="input-icons">
+                    <button class="btn btn-primary" [disabled] = "loginForm.invalid" type="submit">SIGN IN</button>	
+                    </div>		
+        </form>
+    </div>
+    </div>
+    
+    
+    
+    
+    

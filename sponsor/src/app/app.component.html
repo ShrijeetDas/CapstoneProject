@@ -1,0 +1,53 @@
+<!-- <h1>Greeting</h1>
+<div [hidden]="!isLoggedin">
+	<p>Welcome back, {{ loggedinUser }}!</p>
+	<p>The ID is {{greeting.id}}</p>
+	<p>The content is {{greeting.content}}</p>
+	
+	<p><a style="text-decoration: underline; cursor: pointer;" (click)=doLogout()>Logout</a></p>
+</div>
+<div [hidden]="isLoggedin">
+	<p>Login to see your greeting</p>
+</div> -->
+
+
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+	<div class = "navbar-nav">
+	  <div class = "nav-item">
+		<a href="https://be.cognizant.com/"><img src="assets/img/cognizant.png"
+			 height="80px" width="180px" style="padding-right: 30px;">
+		</a>	 
+		  <!-- <a  routerLinkActive="active"    routerLink="planlist"
+		   class="nav-link" title="planlist" >Plan List</a>
+	      
+		  <a  routerLinkActive="active"  routerLink="success"
+		   class="nav-link" title="accounts">Accounts</a> -->
+		   
+		  <a  routerLinkActive="active"    routerLink="login" 
+		  class="nav-link" title="login">Login</a>
+		 
+		 
+	  </div>
+	  </div>
+	</nav>
+
+
+
+	
+	
+	<router-outlet></router-outlet>
+
+	
+
+
+	<footer class = "footer">
+		<div class = "container">
+			<span>&copy; 2021 All Rights Reserved  </span>
+			<a href="https://twitter.com/Cognizant?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+			<i class="fa fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/company/cognizant"><i class="fa fa-linkedin"></i></a>
+		    <a href="https://www.facebook.com/Cognizant/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.cognizant.com/partners/google-cloud"><i class="fa fa-google"></i></a>
+		</div>
+	</footer>

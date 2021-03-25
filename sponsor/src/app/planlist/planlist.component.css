@@ -1,0 +1,62 @@
+td.tip {
+    border-bottom: 1px dashed;
+    text-decoration: none
+}
+td.tip:hover {
+    cursor: help;
+    position: relative
+}
+td.tip span {
+    display: none
+}
+td.tip:hover span {
+    border: black 1px dotted;
+    padding: 5px 20px 5px 5px;
+    display: block;
+    z-index: 100;
+    background:  white no-repeat 100% 5%;
+    left: 0px;
+    margin: 10px;
+    width: 600px;
+    position: absolute;
+    top: 10px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none
+}
+
+
+.container{
+    /* padding-top: 50px; */
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(25, 25, 133);
+}
+thead{
+    background-color: gray;
+}
+th{
+    color: white;
+}
+tr:hover{
+    background-color:rgb(168, 211, 168);
+    color: white;
+    font-weight: bold;
+}
+.head:hover{
+    background-color: rgb(103, 160, 182);
+}
+/* .sub-entry{
+    float: left;
+} */
+#chart-container{
+    width:500px;
+    height:370px;
+}
+a{
+    font-weight: bold;
+}
